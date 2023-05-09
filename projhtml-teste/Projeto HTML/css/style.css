@@ -19,14 +19,14 @@ header {
     color: #fff;
 }
 
-#logo {
+.logo {
     display: block;
     margin: auto;
     margin-right: auto;
-    width: 250px;
+    width: auto;
 }
 
-#logo img {
+.logo img {
     width: 100%;
 }
 
@@ -39,7 +39,7 @@ header .container {
 header section,
 header nav {
     padding: 10px;
-    margin: 10px;
+    margin: auto;
     text-align: center;
 }
 
@@ -63,7 +63,7 @@ header nav a {
     padding: 5px;
 }
 
-nav > a:hover {
+nav>a:hover {
     background-color: #1A223B;
     border-radius: 5px;
 }
@@ -112,7 +112,7 @@ button[type="submit"] {
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: auto;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -121,28 +121,57 @@ button[type="submit"]:hover {
     background-color: #173332;
 }
 
-footer {
-    /*background-color: #0c3f30;*/
-    padding: 40px 0;
-    text-align: center;
+.logo img {
+    width: auto;
 }
 
 #footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
-#logo img {
-    width: 200px;
+#logo_footer {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+#social-links {
+    margin-bottom: 10px;
+}
+
+#social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+#meio-contato {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#meio-contato p {
+    margin: 5px 0;
+}
+
+#meio-contato i {
+    margin-right: 5px;
+}
+
+.logo img {
+    width: auto;
 }
 
 #social-links a {
     font-size: 24px;
     color: black;
-    margin: 0 10px;
+    margin: 2px 10px;
     transition: color 0.2s;
 }
 
@@ -159,83 +188,157 @@ footer {
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .categoria {
-  width: 200px;
-  text-align: center;
-  margin: 10px;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
 }
 
 .categoria h2 {
-  font-size: 16px;
-  margin-bottom: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .categoria img {
-  width: 100%;
-  border-radius: 5px;
+    width: 100%;
+    border-radius: 5px;
 }
 
 section {
     margin-bottom: 40px;
-  }
-  
+}
+
 section h3 {
     font-size: 18px;
     margin-bottom: 10px;
-  }
-  
+}
+
 section div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  
+}
+
 section figure {
     /*width: 200px;*/
-    width: 20%;
+    display: auto;
+    width: auto;
     margin: 15px;
     text-align: center;
+    justify-content: center;
     border: 1px;
     border-style: solid;
     border-color: rgb(196, 194, 194);
-    box-shadow: 5px 5px 12px 3px gray; 
-  }
-  
+    box-shadow: 2px 2px 6px 1px gray;
+}
+
 section img {
     height: 130px;
     border-radius: 5px;
-  }
-  
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 section figcaption {
     margin-top: 4px;
     font-size: 12px;
-  }
-  
-.preco{
+}
+
+.preco {
     text-align: center;
     margin-top: 10px;
     color: red;
     font-weight: bold;
 }
 
-.reduz{
+.reduz {
     font-size: 10px;
 }
 
-#contact-info{
+#contact-info {
     color: #000000;
 }
 
-#alcides{
+#alcides {
     background-color: #121B24;
+    width: auto;
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
+#nome {
+    margin-top: 20px;
+}
+
+#nome h4 {
+    margin-top: 0;
+}
+
+#nome ol {
+    list-style-type: decimal;
+    margin: 0;
+    padding: 0;
+}
+
+#nome li {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width:960px) {
+    .container {
+        max-width: 100%;
+    }
+
+    /*
+    .logo {
+        max-width: 100%;
+    }
+*/
+    header {
+        background-size: auto;
+        scroll-margin: auto;
+        margin: auto;
+    }
+
+    .responsivo {
+        display: block;
+        max-width: 100%;
+        height: auto
+    }
+
+    button {
+        max-width: 100%;
+        text-align: center;
+        margin-left: auto;
+    }
+
+    section figure {
+        max-height: 100%;
+        display: auto;
+    }
+
+    header div nav {
+        flex-direction: column;
+    }
+
+    #footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #logo {
+        margin-bottom: 20px;
+    }
+}
+
+ul{
+    list-style: none;
+}
